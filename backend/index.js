@@ -1,14 +1,14 @@
 const express=require("express");
 require("./db/config");
-const FoodItems = require("./db/food_items")
-const FoodCategory = require("./db/foodCategory");
+const FoodItems = require("./models/food_items")
+const FoodCategory = require("./models/foodCategory");
 const app=express();
 
 app.get('/',(req,res)=>{
     res.send("API IS WORKING");
 })
 
-FoodItems.find({"name":"Chicken Biryani"}).then(
+FoodItems.find().then(
 
     items=>{console.log(items);
 
