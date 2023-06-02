@@ -14,6 +14,9 @@ const Navbar = () => {
        <li className="ml-5 text-white font-medium text-md">
         <Link to='/signin'>Sign In</Link>
        </li >
+       <li className="ml-5 text-white font-medium text-md">
+        <Link to='/signup'>Sign Up</Link>
+       </li>
        
       </ul>
     </div>

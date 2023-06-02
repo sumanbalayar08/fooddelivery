@@ -7,6 +7,7 @@ router.post(
   "/createuser",[
     check('name').isLowercase(),
     check('email').isEmail(),
+    check('password').isLength({min:5})
   ],
 
   async (req, res) => {
